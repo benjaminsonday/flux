@@ -1,4 +1,7 @@
 require 'resque'
+require 'yaml'
+
+require 'spec_env_helper'
 
 ENV['RACK_ENV'] = 'test'
 config = YAML.load(File.read('config/app.yml'))['test']
